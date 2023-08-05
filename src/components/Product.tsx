@@ -22,7 +22,7 @@ const Product = (productProps: productProps) => {
       >
         <div className="imageContainer bg-white relative max-w-[180px] rounded-t-lg">
           <img
-            className="min-w-full  aspect-square object-contain rounded-t-lg"
+            className="min-w-full  aspect-square object-contain rounded-t-lg max-w-[180px]"
             src={productProps.productImage}
             alt=""
           />
