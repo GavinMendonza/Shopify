@@ -1,6 +1,6 @@
 import { useState } from "react";
-import AddToCartBtn from "./AddToCartBtn";
-import ProductDetails from "./ProductDetails";
+// import AddToCartBtn from "./AddToCartBtn";
+// import ProductDetails from "./ProductDetails";
 import ProductModal from "./ProductModal";
 
 interface productProps {
@@ -12,12 +12,12 @@ interface productProps {
 }
 
 const Product = (productProps: productProps) => {
-  const [IsShown, setIsShown] = useState(false);
+  // const [IsShown, setIsShown] = useState(false);
   return (
     <>
       <div
-        onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}
+        // onMouseEnter={() => setIsShown(true)}
+        // onMouseLeave={() => setIsShown(false)}
         className="relative text-sm  grid rounded-lg shadow-md grid-flow-row bg-slate-800 border-none max-w-[180px] ease-in"
       >
         <div className="imageContainer bg-white relative max-w-[180px] rounded-t-lg">
