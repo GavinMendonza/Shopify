@@ -30,11 +30,11 @@ const Product = (productProps: productProps) => {
             {productProps.productPrice}$
           </div>
         </div>
-        <div className="productData  pl-3 pt-3 pb-3 pr-0">
+        <div className="productData  pl-3 pt-3 pb-3 pr-1 max-w-[180px]">
           <div className="productTitle line-clamp-1 font-semibold text-lg">
             {productProps.productName}
           </div>
-          <div className="productDesc line-clamp-2 text-xs">
+          <div className="productDesc line-clamp-2 text-xs pr-2 ">
             {productProps.productDesc}
           </div>
         </div>
