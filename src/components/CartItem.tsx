@@ -22,7 +22,7 @@ const CartItem = (CartItemProps: CartItemProps) => {
         />
         <div className="flex flex-col gap-3  px-2 justify-center">
           <div className="font-semibold ">{item?.title}</div>
-          <div>{item?.price * CartItemProps.quantity}$</div>
+          <div>{(item?.price * CartItemProps.quantity).toFixed(2)}$</div>
         </div>
         <ChangeQtyBtns productId={item?.id} quantity={CartItemProps.quantity} />
       </div>
