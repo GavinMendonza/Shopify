@@ -34,7 +34,9 @@ const Product = (productProps: productProps) => {
           <div className="productTitle line-clamp-1 font-semibold text-lg">
             {productProps.productName}
           </div>
-          <div className="productDesc">Very nice shoes!</div>
+          <div className="productDesc line-clamp-2 text-xs">
+            {productProps.productDesc}
+          </div>
         </div>
         {/* {IsShown && <AddToCartBtn />} */}
         {/* <ProductDetails /> */}
