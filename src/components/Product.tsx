@@ -22,7 +22,7 @@ const Product = (productProps: productProps) => {
       >
         <div className="imageContainer bg-white relative max-w-[180px] rounded-t-lg">
           <img
-            className="min-w-full  aspect-square object-contain rounded-t-lg max-w-[180px]"
+            className="min-w-full  aspect-square object-contain rounded-t-lg "
             src={productProps.productImage}
             alt=""
           />
@@ -31,11 +31,13 @@ const Product = (productProps: productProps) => {
           </div>
         </div>
         <div className="productData  pl-3 pt-3 pb-3 pr-1 max-w-[180px]">
-          <div className="productTitle line-clamp-1 font-semibold text-lg">
+          <div className="productTitle line-clamp-1 font-semibold text-lg max-w-[120px] md:max-w-full">
             {productProps.productName}
           </div>
-          <div className="productDesc line-clamp-2 text-xs pr-2 ">
-            {productProps.productDesc}
+          <div className="productDesc text-xs ">
+            <div className="line-clamp-2 max-w-[120px] md:max-w-full">
+              {productProps.productDesc}...
+            </div>
           </div>
         </div>
         {/* {IsShown && <AddToCartBtn />} */}
