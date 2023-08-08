@@ -25,7 +25,7 @@ const ProductList = () => {
   useEffect(() => {
     getFakestoreData();
   }, []);
-  console.log(storeData);
+  // console.log(storeData);
 
   return (
     <div className="container p-4 grid place-items-center gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Badge from "./Badge";
 // import { useShoppingCart } from "../context/ShoppingCartContext";
 import OffCanvasCart from "./OffCanvasCart";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [close, setClose] = useState(false);
@@ -49,20 +50,20 @@ const Navbar = () => {
           }`}
         >
           <li className="my-2 md:my-0">
-            <a
-              href=""
+            <Link
+              to="/"
               className="p-2 hover:bg-slate-900 duration-500 no-underline text-slate-300"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className="my-2 md:my-0">
-            <a
-              href=""
+            <Link
+              to="/about"
               className="p-2 hover:bg-slate-900 duration-500 no-underline text-slate-300"
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="my-2 md:my-0">
             <button
