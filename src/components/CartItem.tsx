@@ -18,7 +18,7 @@ const CartItem = (CartItemProps: CartItemProps) => {
         <img
           src={item?.image}
           alt={item?.title}
-          className="max-w-[100px] aspect-square object-contain bg-white rounded-md"
+          className="px-2 max-w-[100px] aspect-square object-contain bg-white rounded-md"
         />
         <div className="flex flex-col gap-3  px-2 justify-center">
           <div className="font-semibold ">{item?.title}</div>
