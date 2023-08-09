@@ -31,7 +31,7 @@ const Product = (productProps: productProps) => {
           </div>
         </div>
         <div className="productData  pl-3 pt-3 pb-3 pr-1 max-w-[180px]">
-          <div className="productTitle line-clamp-1 font-semibold text-lg max-w-[120px] md:max-w-full">
+          <div className="productTitle text-white line-clamp-1 font-semibold text-lg max-w-[120px] md:max-w-full">
             {productProps.productName}
           </div>
           <div className="productDesc text-xs ">

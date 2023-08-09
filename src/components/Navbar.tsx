@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="relative w-full bg-bootstrap-black z-20 md:static md:flex  py-3 px-4 text-xl ">
         <div className="absolute top-0 left-0 bg-bootstrap-black w-full h-full md:hidden"></div>
         <div className="flex relative z-20 bg-bootstrap-black md:w-auto md:static justify-between">
-          <span className="brand bg-bootstrap-black text-slate-100 inline">
+          <span className="brand bg-bootstrap-black text-white font-semibold inline">
             Shopify!
           </span>
 
@@ -59,10 +59,10 @@ const Navbar = () => {
           </li>
           <li className="my-2 md:my-0">
             <Link
-              to="/about"
+              to="/pricing"
               className="p-2 hover:bg-slate-900 duration-500 no-underline text-slate-300"
             >
-              About
+              Shopify+
             </Link>
           </li>
           <li className="my-2 md:my-0">

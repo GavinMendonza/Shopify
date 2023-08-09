@@ -1,11 +1,21 @@
 import { AiFillHeart } from "react-icons/ai";
 
-const Toast = ({ changeState }: any) => {
+interface toastProps {
+  changeState: () => void;
+  isPricing: boolean;
+}
+
+const Toast = (toastProps: toastProps) => {
   return (
     <>
       <div
         id="toast-default"
-        className="flex mt-3 items-center p-4  rounded-lg shadow text-gray-400 bg-gray-800"
+        className={
+          "flex mt-3 items-center p-4  rounded-lg shadow text-gray-400 bg-gray-800 " +
+          (toastProps.isPricing == true
+            ? "md:absolute md:bottom-7 md:left-[20vh] md:z-50"
+            : "relative -top-[30vh]")
+        }
         role="alert"
       >
         <div className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8  rounded-lg bg-blue-800 text-blue-200">
@@ -22,7 +32,7 @@ const Toast = ({ changeState }: any) => {
           className="ml-auto -mx-1.5 -my-1.5  rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5  inline-flex items-center justify-center h-8 w-8 text-gray-500 hover:text-white bg-gray-800 hover:bg-gray-700"
           data-dismiss-target="#toast-default"
           aria-label="Close"
-          onClick={() => changeState()}
+          onClick={() => toastProps.changeState()}
         >
           <span className="sr-only">Close</span>
           <svg

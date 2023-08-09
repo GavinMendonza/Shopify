@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar";
+import Pricing from "../components/Pricing";
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <h1>About</h1>
+      <Pricing />
     </>
   );
 };

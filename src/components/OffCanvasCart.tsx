@@ -75,13 +75,16 @@ const OffCanvasCart = () => {
             type="button"
             className="btn btn-success w-full mt-10"
             id="liveToastBtn"
-            onClick={() => setshowToast(true)}
+            // onClick={() => setshowToast(true)}
+            onClick={() => {
+              setshowToast(true);
+            }}
           >
             Buy Now!
           </button>
 
           {/* ----------------------------toast---------------------- */}
-          {showToast && <Toast changeState={changeState} />}
+          {showToast && <Toast changeState={changeState} isPricing={false} />}
           {/* ------------------------toast ends here---------------- */}
         </div>
       </div>
